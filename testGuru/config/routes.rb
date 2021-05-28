@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root "articles#index"
+  #root "articles#index" 
 
-  get "/articles", to: "articles#index"
+  #get "/articles", to: "articles#index"
 
   get "/about", to: "public#about"
 
