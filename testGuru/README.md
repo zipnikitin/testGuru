@@ -1,7 +1,6 @@
 # testGuru
 [testGuru](https://github.com/zipnikitin/testGuru)
 
-## Install
 
 ### Clone the repository
 
@@ -45,8 +44,42 @@ rails db:create db:migrate db:seed
 bin/rails server
 ```
 
-### Test the link
+## Root link
 
 [LocalServer](http://localhost:3000)
 
+## Test link
 
+[Test](http://localhost:3000/test)
+
+## Categories links
+
+[Easy](http://localhost:3000/test/easy)
+[Middle](http://localhost:3000/test/mid)
+[Hard](http://localhost:3000/test/hard)
+
+## Easy quastions
+
+[1](http://localhost:3000/test/easy/1)
+[2](http://localhost:3000/test/easy/2)
+[3](http://localhost:3000/test/easy/3)
+
+## Middle quastions
+
+[1](http://localhost:3000/test/mid/1)
+[2](http://localhost:3000/test/mid/2)
+[3](http://localhost:3000/test/mid/3)
+
+## Hard quastions
+
+[1](http://localhost:3000/test/hard/1)
+[2](http://localhost:3000/test/hard/2)
+[3](http://localhost:3000/test/hard/3)
+
+## Answers
+
+[Answers](http://localhost:3000/test/answers)
+
+## User Results
+
+[Results](http://localhost:3000/test/results)
