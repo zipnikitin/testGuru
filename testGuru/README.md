@@ -46,40 +46,18 @@ bin/rails server
 
 ## Root link
 
-[LocalServer](http://localhost:3000)
+## Test Page
 
-## Test link
+## Authentication Page
 
-[Test](http://localhost:3000/test)
+## Categories Pages
 
-## Categories links
+## Easy quastions Page
 
-[Easy](http://localhost:3000/test/easy)
-[Middle](http://localhost:3000/test/mid)
-[Hard](http://localhost:3000/test/hard)
+## Middle quastions Page
 
-## Easy quastions
+## Hard quastions Page
 
-[1](http://localhost:3000/test/easy/1)
-[2](http://localhost:3000/test/easy/2)
-[3](http://localhost:3000/test/easy/3)
+## Answers Page
 
-## Middle quastions
-
-[1](http://localhost:3000/test/mid/1)
-[2](http://localhost:3000/test/mid/2)
-[3](http://localhost:3000/test/mid/3)
-
-## Hard quastions
-
-[1](http://localhost:3000/test/hard/1)
-[2](http://localhost:3000/test/hard/2)
-[3](http://localhost:3000/test/hard/3)
-
-## Answers
-
-[Answers](http://localhost:3000/test/answers)
-
-## User Results
-
-[Results](http://localhost:3000/test/results)
+## User Results Page
