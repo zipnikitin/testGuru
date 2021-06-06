@@ -1,5 +1,5 @@
 current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/gems/sqlite3-1.4.2/ext/sqlite3
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210527-40464-f7rhs5.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210606-80495-d5r3mh.rb extconf.rb
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for -ldl... yes
@@ -28,25 +28,25 @@ compiling database.c
 database.c:726:57: warning: incompatible pointer types passing 'int (VALUE, int, char **, char **)' (aka 'int (unsigned long, int, char **, char **)') to parameter of type 'int (*)(void *, int, char **, char **)' [-Wincompatible-pointer-types]
     status = sqlite3_exec(ctx->db, StringValuePtr(sql), hash_callback_function, callback_ary, &errMsg);
                                                         ^~~~~~~~~~~~~~~~~~~~~~
-/usr/local/Cellar/sqlite/3.35.3/include/sqlite3.h:405:9: note: passing argument to parameter 'callback' here
+/usr/local/Cellar/sqlite/3.35.5/include/sqlite3.h:405:9: note: passing argument to parameter 'callback' here
   int (*callback)(void*,int,char**,char**),  /* Callback function */
         ^
 database.c:726:81: warning: incompatible integer to pointer conversion passing 'VALUE' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
     status = sqlite3_exec(ctx->db, StringValuePtr(sql), hash_callback_function, callback_ary, &errMsg);
                                                                                 ^~~~~~~~~~~~
-/usr/local/Cellar/sqlite/3.35.3/include/sqlite3.h:406:9: note: passing argument to parameter here
+/usr/local/Cellar/sqlite/3.35.5/include/sqlite3.h:406:9: note: passing argument to parameter here
   void *,                                    /* 1st argument to callback */
         ^
 database.c:728:57: warning: incompatible pointer types passing 'int (VALUE, int, char **, char **)' (aka 'int (unsigned long, int, char **, char **)') to parameter of type 'int (*)(void *, int, char **, char **)' [-Wincompatible-pointer-types]
     status = sqlite3_exec(ctx->db, StringValuePtr(sql), regular_callback_function, callback_ary, &errMsg);
                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/local/Cellar/sqlite/3.35.3/include/sqlite3.h:405:9: note: passing argument to parameter 'callback' here
+/usr/local/Cellar/sqlite/3.35.5/include/sqlite3.h:405:9: note: passing argument to parameter 'callback' here
   int (*callback)(void*,int,char**,char**),  /* Callback function */
         ^
 database.c:728:84: warning: incompatible integer to pointer conversion passing 'VALUE' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
     status = sqlite3_exec(ctx->db, StringValuePtr(sql), regular_callback_function, callback_ary, &errMsg);
                                                                                    ^~~~~~~~~~~~
-/usr/local/Cellar/sqlite/3.35.3/include/sqlite3.h:406:9: note: passing argument to parameter here
+/usr/local/Cellar/sqlite/3.35.5/include/sqlite3.h:406:9: note: passing argument to parameter here
   void *,                                    /* 1st argument to callback */
         ^
 4 warnings generated.
@@ -55,15 +55,15 @@ compiling sqlite3.c
 compiling statement.c
 linking shared-object sqlite3/sqlite3_native.bundle
 ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.2.Internal.sdk/usr/local/lib'
-ld: warning: ignoring file aggregator.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file backup.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file exception.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file aggregator.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file database.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file sqlite3.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file exception.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file statement.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file sqlite3.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file /usr/local/opt/sqlite/lib/libsqlite3.dylib, building for macOS-arm64e but attempting to link with file built for macOS-x86_64
 ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.2.Internal.sdk/usr/local/lib'
 
 current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/gems/sqlite3-1.4.2/ext/sqlite3
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20210527-40464-8p7497/sqlite3
+/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20210606-80495-1tj4l4a/sqlite3
