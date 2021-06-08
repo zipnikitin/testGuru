@@ -10,51 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_07_140250) do
+ActiveRecord::Schema.define(version: 2021_06_08_135308) do
 
-  create_table "answers", id: false, force: :cascade do |t|
-    t.integer "aid"
-    t.integer "number_id"
-    t.string "body"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["number_id"], name: "index_answers_on_number_id"
-  end
-
-  create_table "categories", force: :cascade do |t|
-    t.string "type"
-    t.integer "level_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["level_id"], name: "index_categories_on_level_id"
-  end
-
-  create_table "questions", force: :cascade do |t|
-    t.integer "qid"
-    t.integer "number"
-    t.string "body"
-    t.integer "level_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["level_id"], name: "index_questions_on_level_id"
-  end
-
-  create_table "tests", force: :cascade do |t|
-    t.string "tittle"
-    t.integer "level"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.integer "wrong"
-    t.integer "correct"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  add_foreign_key "answers", "numbers"
-  add_foreign_key "categories", "levels"
-  add_foreign_key "questions", "levels"
 end
