@@ -1,5 +1,5 @@
-current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
-/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210615-30948-m4zqx.rb extconf.rb
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
+/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210616-1198-164ohko.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -12,10 +12,10 @@ checking for port_event_t in port.h... no
 checking for sys/resource.h... yes
 creating Makefile
 
-current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
 make "DESTDIR=" clean
 
-current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
 make "DESTDIR="
 compiling bytebuffer.c
 compiling monitor.c
@@ -91,6 +91,6 @@ In file included from nio4r_ext.c:6:
 compiling selector.c
 linking shared-object nio4r_ext.bundle
 
-current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/nio4r-2.5.7/ext/nio4r
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20210615-30948-1jxnlvu
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20210616-1198-ic4inh

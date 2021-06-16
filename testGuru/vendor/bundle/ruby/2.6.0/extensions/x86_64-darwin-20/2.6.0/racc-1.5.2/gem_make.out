@@ -1,16 +1,16 @@
-current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
-/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210615-30948-ntpydd.rb extconf.rb
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210616-1198-x8byuf.rb extconf.rb
 checking for rb_ary_subseq()... yes
 creating Makefile
 
-current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
 make "DESTDIR=" clean
 
-current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
 make "DESTDIR="
 compiling cparse.c
 linking shared-object racc/cparse.bundle
 
-current directory: /Users/zipnikitin/Documents/projects/testGuru/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/racc-1.5.2/ext/racc/cparse
 make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20210615-30948-jy3fdd/racc
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20210616-1198-1uk6rqm/racc
