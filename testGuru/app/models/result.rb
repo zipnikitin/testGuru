@@ -1,5 +1,5 @@
 
-class Test < ActiveRecord::Base
+class Result < ActiveRecord::Base
 
 end
 
