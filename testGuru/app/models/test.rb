@@ -1,6 +1,7 @@
 
 class Test < ActiveRecord::Base
   belongs_to :category
+  belongs_to :author, class_name: 'User'
 
   has_many :questions, dependent: :destroy
   has_many :results, dependent: :destroy
