@@ -1,13 +1,13 @@
 
 class User < ActiveRecord::Base
-  has_many :tests, foreign_key: :author_id, class_name: 'Test'
+  has_many :passed_tests, foreign_key: :author_id, class_name: 'Test'
   has_many :results, dependent: :destroy
   has_many :tests, through: :results, dependent: :destroy
 
   def tests_with_level(current_level)
-    Test.joins(:result)
+    Test.joins(:results)
       .where(results: { user_id: id })
-      .where(level: current_level)
+      .where(tests: { level: current_level })
   end
 end
 
