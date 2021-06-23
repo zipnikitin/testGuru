@@ -16,4 +16,4 @@ questions = Question.create!([{ body: 'Left Hand Riffing', test: tests[0] },
 answers = Answer.create!([{ body: '035065', question: questions[0], correct: true },
                 { body: '04070407', question: questions[1], correct: true },
                 { body: 'Eviscerate', question: questions[2], correct: true }])
-results = Result.create!([{ user: users[0], test: tests[0] }])
+testusers = TestsUser.create!([{ user: users[0], test: tests[0] }])
