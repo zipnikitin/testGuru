@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_23_105838) do
+ActiveRecord::Schema.define(version: 2021_06_24_084515) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "question_id"
@@ -36,12 +36,12 @@ ActiveRecord::Schema.define(version: 2021_06_23_105838) do
   end
 
   create_table "results", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "test_id"
+    t.integer "tested_user_id", null: false
+    t.integer "passed_test_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["test_id"], name: "index_results_on_test_id"
-    t.index ["user_id"], name: "index_results_on_user_id"
+    t.index ["passed_test_id"], name: "index_results_on_passed_test_id"
+    t.index ["tested_user_id"], name: "index_results_on_tested_user_id"
   end
 
   create_table "tests", force: :cascade do |t|
@@ -55,13 +55,6 @@ ActiveRecord::Schema.define(version: 2021_06_23_105838) do
     t.index ["category_id"], name: "index_tests_on_category_id"
   end
 
-  create_table "tests_users", id: false, force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "test_id", null: false
-    t.index ["test_id", "user_id"], name: "index_tests_users_on_test_id_and_user_id", unique: true
-    t.index ["user_id", "test_id"], name: "index_tests_users_on_user_id_and_test_id", unique: true
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -72,8 +65,8 @@ ActiveRecord::Schema.define(version: 2021_06_23_105838) do
 
   add_foreign_key "answers", "questions"
   add_foreign_key "questions", "tests"
-  add_foreign_key "results", "tests"
-  add_foreign_key "results", "users"
+  add_foreign_key "results", "test", column: "passed_test_id"
+  add_foreign_key "results", "user", column: "tested_user_id"
   add_foreign_key "tests", "categories"
   add_foreign_key "tests", "user", column: "author_id"
 end
