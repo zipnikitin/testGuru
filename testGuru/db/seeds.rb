@@ -16,7 +16,7 @@ questions = Question.create!([{ body: 'Left Hand Riffing', test: tests[0] },
                               { body: 'Legato', test: tests[1] },
                               { body: 'Frantic Disembowelment', test: tests[2] }
                               { body: 'Experience Your Flesh', test: tests[2] }])
-answers = Answer.create!([{ body: '035065', question: questions[0], correct: true },
+Answer.create!([{ body: '035065', question: questions[0], correct: true },
                 { body: '056046', question: questions[0], correct: false },
                 { body: 'Down-Picking', question: questions[1], correct: true },
                 { body: 'Alternate Picking', question: questions[2], correct: false },

@@ -5,7 +5,7 @@ class Test < ActiveRecord::Base
 
   has_many :questions, dependent: :destroy
   has_many :results, dependent: :destroy
-  has_many :users, through: :results
+  has_many :users, source: :user, foreign_key: :author_id, through: :results, class_name: 'User'
 
 
   def self.tests_named(category_name)
