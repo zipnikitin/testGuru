@@ -9,7 +9,7 @@ class Test < ActiveRecord::Base
 
   def self.tests_named(category_name)
     joins(:category)
-      .where(categories: { title: category_title })
+      .where(categories: { title: category_name })
       .order(title: :desc)
       .pluck(:title)
   end
