@@ -7,11 +7,20 @@ class Test < ActiveRecord::Base
   has_many :results, dependent: :destroy
   has_many :users, through: :results
 
-  def self.tests_named(category_name)
+  validates :tittle, presence: true, uniqueness: { scope: :level }
+
+  validates :level, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+
+  scope :easy_tests,    -> { level(0..1) }
+  scope :medium_tests,  -> { level(2..4) }
+  scope :hard_tests,    -> { level(5..Float::INFINITY) }
+
+  scope :tests_named, ->(category_name) do
     joins(:category)
       .where(categories: { title: category_name })
       .order(title: :desc)
       .pluck(:title)
   end
+
 end
 
