@@ -1,24 +1,14 @@
-# README
+# testGuru
+[testGuru](https://github.com/zipnikitin/testGuru)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Categories Page
 
-Things you may want to cover:
+## Tests Page
+ 
+## Questions Page
 
-* Ruby version
+## Answers Page
 
-* System dependencies
+## User Page
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Result Page
