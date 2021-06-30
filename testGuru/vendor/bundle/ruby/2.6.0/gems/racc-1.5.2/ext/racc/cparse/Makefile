@@ -31,13 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-<<<<<<< Updated upstream
-sitearchdir = $(DESTDIR)./.gem.20210630-2354-tideum
-sitelibdir = $(DESTDIR)./.gem.20210630-2354-tideum
-=======
-sitearchdir = $(DESTDIR)./.gem.20210630-7166-yepnfv
-sitelibdir = $(DESTDIR)./.gem.20210630-7166-yepnfv
->>>>>>> Stashed changes
+sitearchdir = $(DESTDIR)./.gem.20210616-1198-1uk6rqm
+sitelibdir = $(DESTDIR)./.gem.20210616-1198-1uk6rqm
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
