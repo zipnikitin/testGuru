@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 class Test < ActiveRecord::Base 
   belongs_to :category
   belongs_to :author, class_name: "User", foreign_key: "author_id"
@@ -12,6 +13,11 @@ class Test < ActiveRecord::Base
       .where(categories: { title: category_name })
       .order(title: :desc)
       .pluck(:title)
+=======
+class Test < ActiveRecord::Base
+  def self.tests_named(category_name)
+    joins('JOIN categories ON tests.category_id = categories.id').where(categories: { title: category_name }).order(type: :desc).pluck(:tittles)
+>>>>>>> Stashed changes
   end
 end
 

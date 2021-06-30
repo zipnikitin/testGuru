@@ -1,12 +1,12 @@
-current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210616-1198-v8a087.rb extconf.rb
+current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-2354-lonos7.rb extconf.rb
 creating Makefile
 
-current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-make "DESTDIR=" clean
+current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+make DESTDIR\= clean
 
-current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-make "DESTDIR="
+current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+make DESTDIR\=
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -75,6 +75,6 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.bundle
 
-current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
-make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20210616-1198-rt3los/sassc
+current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/sassc-2.4.0/ext
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20210630-2354-hprd6c/sassc

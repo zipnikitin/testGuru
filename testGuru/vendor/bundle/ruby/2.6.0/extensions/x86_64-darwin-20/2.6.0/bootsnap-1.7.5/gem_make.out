@@ -1,15 +1,15 @@
-current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
-/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210616-1198-ua282f.rb extconf.rb
+current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-2354-t7ytct.rb extconf.rb
 creating Makefile
 
-current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
-make "DESTDIR=" clean
+current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\= clean
 
-current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
-make "DESTDIR="
+current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\=
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
-current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
-make "DESTDIR=" install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20210616-1198-1f0zabu/bootsnap
+current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20210630-2354-19po785/bootsnap
