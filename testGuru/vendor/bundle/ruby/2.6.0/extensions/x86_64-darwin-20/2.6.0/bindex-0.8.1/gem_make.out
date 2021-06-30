@@ -1,32 +1,15 @@
-<<<<<<< Updated upstream
-current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-2354-8krg1w.rb extconf.rb
-creating Makefile
-
-current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= clean
-
-current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-=======
 current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-7166-qnhzx0.rb extconf.rb
+/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210616-1198-1h8nij9.rb extconf.rb
 creating Makefile
 
 current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= clean
+make "DESTDIR=" clean
 
 current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
->>>>>>> Stashed changes
-make DESTDIR\=
+make "DESTDIR="
 compiling cruby.c
 linking shared-object skiptrace/internal/cruby.bundle
 
-<<<<<<< Updated upstream
-current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20210630-2354-1p35p8z/skiptrace/internal
-=======
 current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20210630-7166-16pkqs9/skiptrace/internal
->>>>>>> Stashed changes
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20210616-1198-1jmp6bw/skiptrace/internal

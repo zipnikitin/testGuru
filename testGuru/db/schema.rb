@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_18_202616) do
+ActiveRecord::Schema.define(version: 2021_06_30_131011) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "question_id"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2021_06_18_202616) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["author_id"], name: "index_tests_on_author_id"
     t.index ["category_id"], name: "index_tests_on_category_id"
+    t.index ["tittle", "level"], name: "index_tests_on_tittle_and_level", unique: true
   end
 
   create_table "users", force: :cascade do |t|
