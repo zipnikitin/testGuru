@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
 /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-2354-t7ytct.rb extconf.rb
 creating Makefile
@@ -6,10 +7,26 @@ current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/boot
 make DESTDIR\= clean
 
 current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+=======
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-7166-12vraz7.rb extconf.rb
+creating Makefile
+
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+>>>>>>> Stashed changes
 make DESTDIR\=
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
+<<<<<<< Updated upstream
 current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
 make DESTDIR\= install
 /usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20210630-2354-19po785/bootsnap
+=======
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20210630-7166-ecz9x5/bootsnap
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
 /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-2354-42lnyx.rb extconf.rb
 creating Makefile
@@ -6,10 +7,26 @@ current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/webs
 make DESTDIR\= clean
 
 current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+=======
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/zipnikitin/.rvm/rubies/ruby-2.6.3/bin/ruby -I /Users/zipnikitin/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210630-7166-1523rf0.rb extconf.rb
+creating Makefile
+
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+>>>>>>> Stashed changes
 make DESTDIR\=
 compiling websocket_mask.c
 linking shared-object websocket_mask.bundle
 
+<<<<<<< Updated upstream
 current directory: /Users/zipnikitin/testGuru/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
 make DESTDIR\= install
 /usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20210630-2354-1ay0chr
+=======
+current directory: /Users/zipnikitin/Documents/GitHub/testGuru/testGuru/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20210630-7166-1m1xh7c
+>>>>>>> Stashed changes
