@@ -19,8 +19,11 @@ class Test < ActiveRecord::Base
     joins(:category)
       .where(categories: { title: category_name })
       .order(title: :desc)
+  end
+  
+  def self.show_tests_named(category_name)
+    tests_named(category_name)
       .pluck(:title)
   end
-
 end
 
