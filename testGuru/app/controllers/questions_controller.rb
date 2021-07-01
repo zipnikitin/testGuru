@@ -1,7 +1,16 @@
 class QuestionsController < ApplicationController
-  before_action :test_search
+  before_action :test_search, only: [:index, :create]
+  before_action :question_search, only: [:show, :destroy]
 
   rescue_from ActiveRecord::RecordNotFound, with: :question_not_found
+
+  def test_search
+    @test = Test.find(params[:test_id])
+  end
+
+  def question_search
+    @question = Question.find(params[:id])
+  end
 
   def index
     render plain: @test.questions.pluck(:tittle)
@@ -18,18 +27,16 @@ class QuestionsController < ApplicationController
     question = @test.questions.new(question_params)
 
     if question.save
-      render plain: @question.body.inspect
+      redirect_to action: :index
+    else
+      render :new
     end
   end
 
   def destroy
-    @question.delete
+    @question.destroy
 
-    render plain: '<%= @test.questions.inspect %> удален'
-  end
-
-  def test_search
-    @test = Test.find(params[:test_id])
+    redirect_to action: :index
   end
 
   private
