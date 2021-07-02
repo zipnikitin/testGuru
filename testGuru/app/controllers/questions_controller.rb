@@ -27,7 +27,7 @@ class QuestionsController < ApplicationController
     question = @test.questions.new(question_params)
 
     if question.save
-      redirect_to action: :index
+      redirect_to @question
     else
       render :new
     end
@@ -36,7 +36,7 @@ class QuestionsController < ApplicationController
   def destroy
     @question.destroy
 
-    redirect_to action: :index
+    redirect_to @question
   end
 
   private
