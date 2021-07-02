@@ -1,0 +1,8 @@
+<p>
+  <h2>Вопрос:</h2>
+  <%= @question.body %>
+</p>
+
+<%= link_to 'Изменить', edit_question_path(@question) %> |
+<%= link_to 'Удалить', destroy_question_path(@question) %> |
+<%= link_to 'Назад к вопросам теста', test_path(@question.test) %>

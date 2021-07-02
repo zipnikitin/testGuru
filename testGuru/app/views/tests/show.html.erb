@@ -1,0 +1,14 @@
+<p><h2>Тест:</h2>
+<%= @test.tittle %>
+
+<p><h2>Уровень:</h2>
+<%= @test.level %>
+
+<p><h2>Вопросы теста:</h2>
+<table>
+  <%= render @questions %>
+</table>
+
+<%= link_to 'Изменить', edit_test_path(@question) %> |
+<%= link_to 'Удалить', destroy_test_path(@question) %> |
+<%= link_to 'Вернуться к списку тестов', test_path(test) %>
