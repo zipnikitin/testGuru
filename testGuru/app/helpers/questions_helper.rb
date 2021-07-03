@@ -10,7 +10,7 @@ module QuestionsHelper
   end
 
   def current_year
-    Date.current.year
+    Date.today.year
   end
 
   def guthub_url(author, repo)

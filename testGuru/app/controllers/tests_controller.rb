@@ -1,5 +1,5 @@
 class TestsController < ApplicationController
-  before_action :test_search, only: [:index, :create]
+  before_action :test_search, only: [:show, :update, :edit, :destroy]
 
   rescue_from ActiveRecord::RecordNotFound, with: :test_not_found
 
@@ -8,7 +8,6 @@ class TestsController < ApplicationController
   end
 
   def show
-    @test = Test.find(params[:id])
   end
   
   def new
@@ -16,7 +15,7 @@ class TestsController < ApplicationController
   end
 
   def create
-    @test = @test.new(params[:test])
+    @test = Test.new(test_params)
 
     if test.save
       redirect_to @test
@@ -29,7 +28,7 @@ class TestsController < ApplicationController
   end
 
   def update
-    if @test.update(params[:test])
+    if @test.update(test_params)
       redirect_to @test
     else
       render :edit
@@ -38,14 +37,21 @@ class TestsController < ApplicationController
 
   def destroy
     @test.destroy
-
-    redirect_to @test
+    redirect_to tests_path
   end
 
   private
 
+  def test_params
+    params.require(:test).permit(:tittle, :level, :category_id, :author_id) 
+  end
+
   def test_not_found
     render plain: "Тест не найден"
+  end
+
+  def test_search
+    @test = Test.find(params[:id])
   end
 
 end

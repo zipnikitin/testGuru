@@ -1,18 +1,25 @@
 <%= form_with model: @test, local: true do |form| %>
+  <%= render 'shared/errors', resource: @test %>
+
   <p>
-    <%= f.label :category_id, 'Категория:' %>:
-    <%= f.collection_select :category_id, Category.all, :id, :title, prompt: true %>
+    <%= form.label :tittle, 'Тест' %><br>
+    <%= form.text_field :tittle, value: @test.title %>
   </p>
 
   <p>
-    <%= f.label :tittle, 'Тест:' %><br>
-    <%= f.text_field :tittle, value: @test.tittle %>
+    <%= form.label :level, 'Уровень' %><br>
+    <%= form.number_field :level, value: @test.level %>
   </p>
 
   <p>
-    <%= f.label :level, 'Уровень:' %><br>
-    <%= f.number_field :level, value: @test.level %>
+    <%= form.label :category_id, 'Категория' %>:
+    <%= form.collection_select :category_id, Category.all, :id, :title, prompt: true %>
   </p>
 
-  <p><%= f.submit 'Сохранить' %></p>
+  <p>
+    <%= form.label :author_id, 'Автор' %>:
+    <%= form.collection_select :author_id, User.all, :id, :name, prompt: true %>
+  </p>
+
+  <p><%= form.submit 'Сохранить тест' %></p>
 <% end %>

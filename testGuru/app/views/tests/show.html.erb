@@ -1,7 +1,9 @@
-<p><h2>Тест:</h2>
+<p>
+  <strong>Тест:</strong>
 <%= @test.tittle %>
 
-<p><h2>Уровень:</h2>
+<p>
+  <strong>Уровень:</strong>
 <%= @test.level %>
 
 <p><h2>Вопросы теста:</h2>
@@ -9,6 +11,8 @@
   <%= render @questions %>
 </table>
 
-<%= link_to 'Изменить', edit_test_path(@question) %> |
-<%= link_to 'Удалить', destroy_test_path(@question) %> |
-<%= link_to 'Вернуться к списку тестов', test_path(test) %>
+<%= link_to 'Изменить тест', edit_test_path(@question) %> |
+<%= link_to 'Удалить тест', question_path(@question),
+                       method: :delete,
+                       data: {confirm: 'Вы уверены?'} %>
+<%= link_to 'Вернуться к списку тестов', test_path %>

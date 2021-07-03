@@ -1,8 +1,10 @@
 <p>
-  <h2>Вопрос:</h2>
+  <strong>Вопрос:</strong>
   <%= @question.body %>
 </p>
 
 <%= link_to 'Изменить', edit_question_path(@question) %> |
-<%= link_to 'Удалить', destroy_question_path(@question) %> |
+<%= link_to 'Удалить', question_path(@question),
+                       method: :delete,
+                       data: {confirm: 'Вы уверены?'} %>
 <%= link_to 'Назад к вопросам теста', test_path(@question.test) %>
