@@ -1,0 +1,17 @@
+<h1>Тесты</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Тест</th>
+      <th>Уровень</th>
+      <th>Всего вопросов</th>
+      <th colspan="3">Действия</th>
+    </tr>
+
+    <%= render @tests %>
+<table>
+
+<p>
+  <%= link_to 'Создать тест', new_test_path(@test) %>
+</p>
