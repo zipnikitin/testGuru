@@ -6,6 +6,7 @@
   <td><%= test.questions.count %></td>
   <td><%= link_to 'Показать тест', test_path(test) %></td>
   <td><%= link_to 'Изменить тест', edit_test_path(test) %></td>
+  <td><%= link_to 'Пройти тест', start_test_path(@test) %></td>
   <td><%= link_to 'Удалить тест', test_path(@test),
                        method: :delete,
                        data: {confirm: 'Уверены, что хотите удалить тест?'} %></td>

@@ -1,0 +1,11 @@
+
+<p>
+  <strong>Ответ:</strong>
+  <%= @answer.body %>
+</p>
+
+<%= link_to 'Изменить', edit_answer_path(@questanswerion) %> |
+<%= link_to 'Удалить', answer_path(@answer.question),
+                       method: :delete,
+                       data: {confirm: 'Вы уверены?'} %>
+<%= link_to 'Назад к ответам', question_path(@answer.question) %>

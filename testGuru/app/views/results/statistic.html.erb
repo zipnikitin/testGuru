@@ -1,0 +1,9 @@
+
+<h1>Результаты теста <%= @result.test.tittle %> </h1>
+
+<% if @result.test_passed? %>
+  <p><span class="bad"><%= @result.test_scores %>% </span></p>
+<% else %>
+  <p><span class="good"><%= @result.test_scores %>% </span></p>
+<% end %>
+<%= link_to 'Вернуться к списку тестов', test_path %>
