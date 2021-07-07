@@ -8,6 +8,7 @@ class TestsController < ApplicationController
   end
 
   def show
+    @questions = @test.questions
   end
   
   def new
@@ -24,8 +25,7 @@ class TestsController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @test.update(test_params)
@@ -38,6 +38,11 @@ class TestsController < ApplicationController
   def destroy
     @test.destroy
     redirect_to tests_path
+  end
+
+  def start
+    @user.tests.push(@test)
+    redirect_to @user.result(@test)
   end
 
   private

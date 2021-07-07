@@ -12,5 +12,8 @@ class User < ActiveRecord::Base
       .where(tests: { level: current_level })
   end
 
+  def result(test)
+    results.order(id: :desc).find_by(test_id: test.id)
+  end
 end
 
