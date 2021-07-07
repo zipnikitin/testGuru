@@ -2,8 +2,7 @@ class AnswersController < ApplicationController
   before_action :question_search, only: [:new, :create]
   before_action :answer_search, only: [:show, :destroy, :edit, :update]
 
-  def show
-  end
+  def show; end
   
   def new
     @answer = @question.answers.new
@@ -19,8 +18,7 @@ class AnswersController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @answer.update(answer_params)
@@ -48,5 +46,4 @@ class AnswersController < ApplicationController
   def question_search
     @question = Question.find(params[:question_id])
   end
-
 end
